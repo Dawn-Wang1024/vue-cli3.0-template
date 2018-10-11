@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+/* 移动端图片边框   相当于  border:0 */
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+
+a,
+input,
+button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* -webkit-tap-highlight-color:rgba(0,0,0,0);//透明度设置为0，去掉点击链接和文本框对象时默认的灰色半透明覆盖层(iOS)或者虚框(Android) */
+input,
+textarea,
+select {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: middle;
+}
+
+
+/*禁止页面文字选择 ，此属性不继承，一般加在body上规定整个body的文字都不会自动调整*/
+input,
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+    outline: none;
+    border: none;
+}
+
+html, body {
+    width : 100%;
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    background-color: #FFF;
+    position: relative;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    font-family: Avenir-Book;
+}
+
+/*禁止移动端用户进行复制.选择.*/
+body * {
+    -webkit-user-select: none;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+html * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*
+移动端横竖屏字体乎大乎小
+禁止文字自动调整大小(默认情况下旋转设备的时候文字大小会发生变化)，此属性也不继承，一般加在body上规定整个body的文字都不会自动调整
+*/
+*{
+    -webkit-text-size-adjust: none;
+}
+
+/*去掉IOS移除原生控件样式*/
+*{
+    -webkit-touch-callout: none;
+}
+
+/*取消chrome下默认的文本框聚焦样式*/
+* {
+    -webkit-appearance: none;
+}
+
+/*消除输入框和按钮的原生外观，在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+input {
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+// 消除ios button默认样式
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 0;
+}

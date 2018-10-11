@@ -1,0 +1,121 @@
+{
+  "name": "vue-cli@3.0项目架构模板",
+  "version": "0.1.0",
+  "description": "vue-cli@3.0项目架构模板",
+  "author": "Dawn <15611816116@163.com>",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "release": "npm run build && node build/upload.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "ssh2-sftp-client": "^3.1.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "no-const-assign": 2,
+      "no-constant-condition": 2,
+      "no-multiple-empty-lines": [
+        1,
+        {
+          "max": 2
+        }
+      ],
+      "no-invalid-this": 2,
+      "no-undef": 0,
+      "no-var": "error",
+      "init-declarations": 2,
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "no-extra-semi": "error",
+      "linebreak-style": [
+        "off",
+        "windows"
+      ],
+      "indent": [
+        "error",
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "array-bracket-spacing": [
+        2,
+        "never"
+      ],
+      "block-scoped-var": 0,
+      "brace-style": [
+        2,
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "comma-dangle": [
+        2,
+        "never"
+      ],
+      "comma-spacing": [
+        2,
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "comma-style": [
+        2,
+        "last"
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
